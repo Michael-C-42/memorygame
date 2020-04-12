@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>The Rick and Morty Matching Game</h1>
+    <div style="text-align:center;">
+        <button class="button" id="startBtn">Start Game</button>
+    </div>
+    <div style="text-align:center" class= "score">
+        <h2>Best Score: <span id="best-score">0</span></h2>
+        <h3>Number of moves: <span id="moves">0</span></h3>
+      </div>
+    <section class="memory-game">
+        <div class="memory-card" data-framework = "birdperson">
+            <img class="front-face" src="https://rickandmortystuff.com/wp-content/uploads/2019/05/26-1.jpg" alt="birdperson">
+            <img class="back-face" src="https://i.pinimg.com/474x/b1/90/d8/b190d89b923fa6d92792d25a0cede1ed.jpg" alt="rick">
+        </div>
+        <div class="memory-card" data-framework = "birdperson">
+            <img class="front-face" src="https://rickandmortystuff.com/wp-content/uploads/2019/05/26-1.jpg" alt="birdperson">
+            <img class="back-face" src="https://i.pinimg.com/474x/b1/90/d8/b190d89b923fa6d92792d25a0cede1ed.jpg" alt="rick">
+        </div>
+        <div class="memory-card" data-framework = "rick-gun">
+            <img class="front-face" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/rick-and-morty-season-4-trailer-1-1570450125.jpg?crop=0.564xw:1.00xh;0,0&resize=480:*" alt="rick-gun">
+            <img class="back-face" src="https://i.pinimg.com/474x/b1/90/d8/b190d89b923fa6d92792d25a0cede1ed.jpg" alt="rick">
+        </div>
+        <div class="memory-card" data-framework = "rick-gun">
+            <img class="front-face" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/rick-and-morty-season-4-trailer-1-1570450125.jpg?crop=0.564xw:1.00xh;0,0&resize=480:*" alt="rick-gun">
+            <img class="back-face" src="https://i.pinimg.com/474x/b1/90/d8/b190d89b923fa6d92792d25a0cede1ed.jpg" alt="rick">
+        </div>
+        <div class="memory-card" data-framework = "evil-morty">
+            <img class="front-face" src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/c7/c71e4f6b5ac667a099ab52f28728def26e44a223_full.jpg" alt="evil-morty">
+            <img class="back-face" src="https://i.pinimg.com/474x/b1/90/d8/b190d89b923fa6d92792d25a0cede1ed.jpg" alt="rick">
+        </div>
+        <div class="memory-card" data-framework = "evil-morty">
+            <img class="front-face" src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/c7/c71e4f6b5ac667a099ab52f28728def26e44a223_full.jpg" alt="evil-morty">
+            <img class="back-face" src="https://i.pinimg.com/474x/b1/90/d8/b190d89b923fa6d92792d25a0cede1ed.jpg" alt="rick">
+        </div>
+        <div class="memory-card" data-framework = "meseeks">
+            <img class="front-face" src="https://vignette.wikia.nocookie.net/rickandmorty/images/6/6c/MeeseeksHQ.png/revision/latest/top-crop/width/360/height/360?cb=20150930232412" alt="meseeks">
+            <img class="back-face" src="https://i.pinimg.com/474x/b1/90/d8/b190d89b923fa6d92792d25a0cede1ed.jpg" alt="rick">
+        </div>
+        <div class="memory-card" data-framework = "meseeks">
+            <img class="front-face" src="https://vignette.wikia.nocookie.net/rickandmorty/images/6/6c/MeeseeksHQ.png/revision/latest/top-crop/width/360/height/360?cb=20150930232412" alt="meseeks">
+            <img class="back-face" src="https://i.pinimg.com/474x/b1/90/d8/b190d89b923fa6d92792d25a0cede1ed.jpg" alt="rick">
+        </div>
+        <div class="memory-card" data-framework = "toilet">
+            <img class="front-face" src="https://c4.wallpaperflare.com/wallpaper/588/5/300/rick-and-morty-toilets-hd-wallpaper-preview.jpg" alt="toilet">
+            <img class="back-face" src="https://i.pinimg.com/474x/b1/90/d8/b190d89b923fa6d92792d25a0cede1ed.jpg" alt="rick">
+        </div>
+        <div class="memory-card" data-framework = "toilet">
+            <img class="front-face" src="https://c4.wallpaperflare.com/wallpaper/588/5/300/rick-and-morty-toilets-hd-wallpaper-preview.jpg" alt="toilet">
+            <img class="back-face" src="https://i.pinimg.com/474x/b1/90/d8/b190d89b923fa6d92792d25a0cede1ed.jpg" alt="rick">
+        </div>
+        <div class="memory-card" data-framework = "pickle">
+            <img class="front-face" src="https://remotehound.com/new/wp-content/uploads/2017/08/RickInAPickle.jpg" alt="pickle">
+            <img class="back-face" src="https://i.pinimg.com/474x/b1/90/d8/b190d89b923fa6d92792d25a0cede1ed.jpg" alt="rick">
+        </div>
+        <div class="memory-card" data-framework = "poopy">
+            <img class="front-face" src="https://cdn.vox-cdn.com/thumbor/qXr16p6ViSPhmD_cHaRMbcFWoVk=/1400x1400/filters:format(png)/cdn.vox-cdn.com/uploads/chorus_asset/file/9487615/butthole.png" alt="poopy">
+            <img class="back-face" src="https://i.pinimg.com/474x/b1/90/d8/b190d89b923fa6d92792d25a0cede1ed.jpg" alt="rick">
+        </div>
+        <div class="memory-card" data-framework = "poopy">
+            <img class="front-face" src="https://cdn.vox-cdn.com/thumbor/qXr16p6ViSPhmD_cHaRMbcFWoVk=/1400x1400/filters:format(png)/cdn.vox-cdn.com/uploads/chorus_asset/file/9487615/butthole.png" alt="poopy">
+            <img class="back-face" src="https://i.pinimg.com/474x/b1/90/d8/b190d89b923fa6d92792d25a0cede1ed.jpg" alt="rick">
+        </div>
+        <div class="memory-card" data-framework = "pickle">
+            <img class="front-face" src="https://remotehound.com/new/wp-content/uploads/2017/08/RickInAPickle.jpg" alt="pickle">
+            <img class="back-face" src="https://i.pinimg.com/474x/b1/90/d8/b190d89b923fa6d92792d25a0cede1ed.jpg" alt="rick">
+        </div>
+        <div class="memory-card" data-framework = "cop">
+            <img class="front-face" src="https://vignette.wikia.nocookie.net/rickandmorty/images/6/6d/CopMorty.png/revision/latest/top-crop/width/360/height/360?cb=20170912070107" alt="cop-morty">
+            <img class="back-face" src="https://i.pinimg.com/474x/b1/90/d8/b190d89b923fa6d92792d25a0cede1ed.jpg" alt="rick">
+        </div>
+        <div class="memory-card" data-framework = "cop">
+            <img class="front-face" src="https://vignette.wikia.nocookie.net/rickandmorty/images/6/6d/CopMorty.png/revision/latest/top-crop/width/360/height/360?cb=20170912070107" alt="cop-morty">
+            <img class="back-face" src="https://i.pinimg.com/474x/b1/90/d8/b190d89b923fa6d92792d25a0cede1ed.jpg" alt="rick">
+        </div>
+        <div class="memory-card" data-framework = "jerry">
+            <img class="front-face" src="https://vignette.wikia.nocookie.net/rickandmorty/images/f/f1/Jerry_Smith.png/revision/latest?cb=20160923151111" alt="jerry">
+            <img class="back-face" src="https://i.pinimg.com/474x/b1/90/d8/b190d89b923fa6d92792d25a0cede1ed.jpg" alt="rick">
+        </div>
+        <div class="memory-card" data-framework = "jerry">
+            <img class="front-face" src="https://vignette.wikia.nocookie.net/rickandmorty/images/f/f1/Jerry_Smith.png/revision/latest?cb=20160923151111" alt="jerry">
+            <img class="back-face" src="https://i.pinimg.com/474x/b1/90/d8/b190d89b923fa6d92792d25a0cede1ed.jpg" alt="rick">
+        </div>
+        <div class="memory-card" data-framework = "santa">
+            <img class="front-face" src="https://vignette.wikia.nocookie.net/rickandmorty/images/9/98/Ruben.JPG/revision/latest?cb=20140510105457" alt="santa">
+            <img class="back-face" src="https://i.pinimg.com/474x/b1/90/d8/b190d89b923fa6d92792d25a0cede1ed.jpg" alt="rick">
+        </div>
+        <div class="memory-card" data-framework = "santa">
+            <img class="front-face" src="https://vignette.wikia.nocookie.net/rickandmorty/images/9/98/Ruben.JPG/revision/latest?cb=20140510105457" alt="santa">
+            <img class="back-face" src="https://i.pinimg.com/474x/b1/90/d8/b190d89b923fa6d92792d25a0cede1ed.jpg" alt="rick">
+        </div>
+
+    </section>
+
+    <script src="mem.js"></script>
+</body>
+</html>
